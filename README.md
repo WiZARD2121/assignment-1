@@ -43,7 +43,7 @@ The domain model should be created by the candidate. Feel free to use any ORM, a
 2. Fork this repository. (use the fork button on right top corner). This will copy this project to your account
 3. clone the forked project into local repository
 4. Make changes to the project to complete assignment
-5. push the complete code to your repo. 
+5. push the complete code to your repo. Ensure that your repo is publically accessible.
 
 The assignment will be reviewed after 1 week.
 
