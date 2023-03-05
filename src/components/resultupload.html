@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Update Mark Detail</title>
+<link rel="stylesheet" href="../csss/updatemark_form.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+<body>
+    <header>
+      
+      <div class="main-content-header">
+          
+          <form method="post" action="update_mark_data.php">
+              <table>
+             <h4> 
+                <tr>
+                  <th>Student Name: </th>
+                  <td><span class="span"><?php echo $row['u_name']; ?></span></td>
+                </tr>
+              </h4>
+              <h4>
+                <tr>
+                  <th>Student id: </th>
+                  <td><span class="span"><?php echo $row['u_idno']; ?></span></td>
+                </tr>
+              </h4>
+                  </table>
+          < class="table1">
+              <span> <h4 class="h_3"> Exam (A)</h4></span>
+             <tr>
+                <th>Bengali</th>   <th> English </th> <th>Math</th> <th>Socialstudy</th>
+                 <td>
+                <input type='text' name='Bengali' value="<?php echo $data['bengali']; ?>" class="th" required/></td>
+                 <td><input type='text' name='english' value="<?php echo $data['english']; ?>" class="th"/></td>
+                 <td><input type='text' name='math' value="<?php echo $data['math1']; ?> " class="th" required/></td>
+                 <td><input type='text' name='Socialstudy' value="<?php echo $data['socialstuy']; ?> " class="th" required/></td>
+                 </tr>
+                </td>
+             </tr>
+             
+         
+             <tr>
+             <td><input type="hidden" name="idno" value="<?php echo $row['u_idno']; ?>"/></td>
+            </tr>
+             <tr>
+             <td align="center" colspan="2"><input type="submit" name="submit" value="Submit" class="submit"/></td>   
+             </tr>
+             
+         </table>
+         
+       
+       </form>
+      </div>
+    </header>
+    
+</body>
+</html>

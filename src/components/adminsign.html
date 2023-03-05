@@ -1,61 +1,88 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Admin Login</title>
-</head>
-<body>
-<div class="form2">
-    <form name="admin" action="php/studdb.php" onsubmit="return validateForm()" method="post">
-        <label for="idno">ID</label>
-        <input type="number",id="idno", name="idno"><br>
-        <label for="passwd">Password</label>
-        <input type="password",id="passwd", name="passwd"><br>
-        <label for="fname">First Name</label>
-        <input type="text",id="fname", name="fname">
-        <label for="mname"> Middle Name</label>
-        <input type="text",id="mname", name="mname">
-        <label for="sname">Surame</label>
-        <input type="text",id="sname", name="sname"><br>
-        <label for="subname">Bengali</label>
-        <input type="radio",id="subname", name="subname">
-        <label for="subname">English</label>
-        <input type="radio",id="subname", name="subname">
-        <label for="subname">Mathametics</label>
-        <input type="radio",id="subname", name="subname">
-        <label for="subname">Social Studies</label>
-        <input type="radio",id="subname", name="subname">
-    </form>
-</div>
-<div class="submit">
-    <button type="submit" form="form" value="Submit">Submit</button>
-</div>
-<script>
-    function validateForm() {
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="admin.css" />
+    <title>Admin Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form2">
+      <form
+        class="container"
+        name="admin"
+        action="admin.jsp"
+        onsubmit="return validateForm()"
+        method="post"
+      >
+        <div class="aa">
+          <label for="idno">ID</label>
+          <input type="number" ,id="idno" , name="idno" /><br />
+          <label for="passwd">Password</label>
+          <input type="password" ,id="passwd" , name="passwd" /><br />
+          <label for="fname">First Name</label>
+          <input type="text" ,id="fname" , name="fname" />
+          <label for="mname"> Middle Name</label>
+          <input type="text" ,id="mname" , name="mname" />
+          <label for="sname">Surame</label>
+          <input type="text" ,id="sname" , name="sname" /><br />
+<!--
+          <div class="subject">
+            <label for="subname">Bengali</label>
+            <input type="radio" ,id="subname" , name="subname" />
+            <label for="subname">English</label>
+            <input type="radio" ,id="subname" , name="subname" />
+            <label for="subname">Mathametics</label>
+            <input type="radio" ,id="subname" , name="subname" />
+            <label for="subname">Social Studies</label>
+            <input type="radio" ,id="subname" , name="subname" />
+          </div>-->
+          <div class="submit">
+            <input class="button" type="submit" onClick="myFnction()" value="submit" />
+            <script>
+              function myFnction() {
+                window.location.href = "resultupload.html";
+              }
+            </script>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      function validateForm() {
         var idno = document.forms["admin"]["idno"].value;
         if (idno == "") {
-            alert("ID must be filled out");
-            return false;
+          alert("ID must be filled out");
+          return false;
         }
-    
+
         var passwd = document.forms["admin"]["passwd"].value;
         if (passwd == "") {
-            alert("password should be filled");
-            return false;
+          alert("password should be filled");
+          return false;
         }
         var fname = document.forms["admin"]["First Name"].value;
         if (fname == "") {
-            alert("Name must be filled out");
-            return false;
-        }var mname = document.forms["admin"]["Middle Name"].value;
+          alert("Name must be filled out");
+          return false;
+        }
+        var mname = document.forms["admin"]["Middle Name"].value;
         if (name == "") {
-            alert("Name must be filled out");
-            return false;
-        }var name = document.forms["admin"]["Surame"].value;
+          alert("Name must be filled out");
+          return false;
+        }
+        var name = document.forms["admin"]["Surame"].value;
         if (name == "") {
-            alert("Name must be filled out");
-            return false;
-        }    
-    }
+          alert("Name must be filled out");
+          return false;
+        }
+      }
     </script>
-</body>
+  </body>
+</html>
