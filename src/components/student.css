@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cotainer {
+  height: 100vh;
+  background-image: url("back.jpg");
+}
+
+.btn {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.aa {
+  padding: 2rem;
+}
+
+.submit {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.rdo {
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.651);
+}
+
+.bdd {
+  padding: 1rem;
+  border: 2px solid rgb(253, 253, 253);
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}

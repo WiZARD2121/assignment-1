@@ -3,37 +3,43 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Student Login</title>
+<link rel="stylesheet" href="student.css">
 </head>
 <body>
-<div class="form1">
-    <form name="studlng" action="studdb.jsp" onsubmit="return validateForm()" method="post">
-        <label for="idno">ID</label>
-        <input type="number",id="idno", name="idno"><br>
-        <label for="passwd">Password</label>
-        <input type="password",id="passwd", name="passwd"><br>
-        <label for="fname">First Name</label>
-        <input type="text",id="fname", name="fname">
-        <label for="mname"> Middle Name</label>
-        <input type="text",id="mname", name="mname">
-        <label for="sname">Surame</label>
-        <input type="text",id="sname", name="sname"><br>
-    <div class="rdo">
-        <label for="classi">Class I</label>
-        <input type="radio",id="classi", name="class", value="Class I">
-        <label for="classii">Class II</label>
-        <input type="radio",id="classii", name="class", value="Class II">
-        <label for="classiii">Class III</label>
-        <input type="radio",id="classiii", name="class", value="Class III">
-        <label for="classiv">Class IV</label>
-        <input type="radio",id="classiv", name="class", value="Class IV">
-        <label for="classv">Class V</label>
-        <input type="radio",id="classv", name="class", value="Class V"><br>
-    </div>
-    </form>
-    </div>
-    <div class="submit">
-        <button type="submit" form="form" value="Submit">Submit</button>
-    </div>
+<div class="cotainer">
+    <div class="form1">
+        <form class="aa" name="studlng" action="studdb.jsp" onsubmit="return validateForm()" method="post">
+<div class="bdd">
+    <label for="idno">ID</label>
+    <input type="number",id="idno", name="idno"><br>
+    <label for="passwd">Password</label>
+    <input type="password",id="passwd", name="passwd"><br>
+    <label for="fname">First Name</label>
+    <input type="text",id="fname", name="fname">
+    <label for="mname"> Middle Name</label>
+    <input type="text",id="mname", name="mname">
+    <label for="sname">Surame</label>
+    <input type="text",id="sname", name="sname"><br>
+</div>
+        <div class="rdo">
+            <label for="classi">Class I</label>
+            <input type="radio",id="classi", name="class", value="Class I">
+            <label for="classii">Class II</label>
+            <input type="radio",id="classii", name="class", value="Class II">
+            <label for="classiii">Class III</label>
+            <input type="radio",id="classiii", name="class", value="Class III">
+            <label for="classiv">Class IV</label>
+            <input type="radio",id="classiv", name="class", value="Class IV">
+            <label for="classv">Class V</label>
+            <input type="radio",id="classv", name="class", value="Class V"><br>
+            <div class="submit">
+                <button class="btn" type="submit" form="form" value="Submit">Submit</button>
+            </div>
+        </div>
+        </form>
+        </div>
+</div>
+    
         <script>
             function validateForm() {
                 
